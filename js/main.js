@@ -72,7 +72,7 @@ const openLightbox1 = (event) => {
 }
 
 imgs1.forEach((imagenes) =>{
-    console.log('click')
+    
     imagenes.addEventListener('click', openLightbox1)
 })
 imgs.forEach((imagen)=> {
