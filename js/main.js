@@ -16,30 +16,8 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-//Función que aplica las animaciones de las habilidades
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("bootstrap");
-        habilidades[1].classList.add("javascript");
-        habilidades[2].classList.add("htmlcss");
-        habilidades[3].classList.add("photoshop");
-        
-        habilidades[4].classList.add("comunicacion");
-        habilidades[5].classList.add("trabajo");
-        habilidades[6].classList.add("creatividad");
-        habilidades[7].classList.add("dedicacion");
-        
-    }
-}
 
 
-//detecto el scrolling para aplicar la animación de la barra de habilidades
-window.onscroll = function(){
-    efectoHabilidades();
-} 
 /*botones*/
 const btnClose = document.getElementById('btn-close');
 const btnBack = document.getElementById('btn-back');
