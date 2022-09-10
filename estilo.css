@@ -165,7 +165,10 @@ html{
     width: 130px;
     margin-right: 20px;
 }
-
+.sobremi button a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
@@ -247,6 +250,10 @@ html{
     gap: 5%;
     
 }
+.skills .fila .col2 .profesional .skill h3:hover {
+    
+    transform: scale(1.2);
+}
 .skills .fila .col2 .profesional h3 {
     margin-top: 25px;
     font-size: 1.3em;
@@ -270,7 +277,12 @@ html{
     cursor: default;
     width: 30%;
     padding-bottom: 20px;
+    transition: all .2s;
     
+}
+.tecnicas img:hover {
+    
+    transform: scale(1.2) rotate(360deg);
 }
 
 
@@ -408,6 +420,11 @@ html{
     text-align: center;
     padding: 20px 0;
 }
+.cajas-img {
+    width: 200px;
+    max-height: 250px;
+    overflow: hidden;
+}
 .portfolio .galeria{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -417,7 +434,7 @@ html{
     cursor: pointer;
 }
 .portfolio .galeria  img{
-    width: 100%;
+    width: 200px;
     display: block;
     height: 250px;
     object-fit: cover;
@@ -426,10 +443,7 @@ html{
     transition: all .3s;
     transform: scale(1.02);
 }
-.tiutloimg:hover {
-    background-color: rgba(0, 0, 0, .6);
-    
-}
+
 .tituloimg {
     margin-top: -30px;  
 }
@@ -486,6 +500,7 @@ html{
 }
 #img-activa1 {
     width: 100%;
+    object-fit: cover;
     
 }
 #contenedor-activo1 button {
